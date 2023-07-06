@@ -5,10 +5,22 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const name = "Sukhi Sethi";
+const user = {
+  "name" : "Sukhi",
+  "location" : "Delhi"
+}
+const element = <div>
+                  <span>Hello, </span> 
+                  <span>World!123</span>
+                  <span> {name}</span>
+                  <span> {user.name} lives in {user.location} </span>
+                </div>;
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>
+  <App/>
 );
 
 // If you want to start measuring performance in your app, pass a function
